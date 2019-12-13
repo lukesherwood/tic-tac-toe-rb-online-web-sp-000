@@ -111,6 +111,8 @@ def play(board)
 while over?(board) != true
   turn(board)
   end
+if over?(board) == true 
+  puts "Congratulations X!"
 end
     
   
