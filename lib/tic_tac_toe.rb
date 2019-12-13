@@ -47,19 +47,19 @@ def valid_move?(board, index)
   end
 end
 
-def turn(board)
+def turn?(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index) == true
-    move(board, index, (current_player(board)))
+    move(board, index, (current_player?(board)))
   else 
     puts "Please enter a valid number"
     turn(board)
   end
 end
 
-def turn_count(board)
+def turn_count?(board)
   count = 0
   board.each do |turn|
     if turn == "X"|| turn == "O"
@@ -69,7 +69,7 @@ def turn_count(board)
   return count
 end
 
-def current_player(board)
+def current_player?(board)
   if turn_count(board).even?
     return "X"
   else
@@ -100,7 +100,7 @@ def over?(board)
   end
 end
 
-def winner(board)
+def winner?(board)
   win = won?(board)
     if win
       return board[win[0]]
