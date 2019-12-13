@@ -112,9 +112,9 @@ while over?(board) != true
   turn(board)
   end
     if draw?(board) == true 
-      puts "It's a cat's game"
+      puts "Cat's game!"
     else
-      puts "Congratulations #{winner(board)}"
+      puts "Congratulations #{winner(board)}!"
     end
 end
     
