@@ -109,7 +109,7 @@ end
 
 def play(board)
 while over?(board) == true
-  turn(board)
+  turn?(board)
   end
 end
     
