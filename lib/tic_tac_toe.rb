@@ -113,18 +113,15 @@ def play(board)
     if over?(board)
     break
     end
-    if won?(board) == true 
-      puts "Congratulations #{win_combination} you've won the game"
-      else if draw?(board) == true
-        puts "Sorry folks, it's a draw."
-      end
-    end
   end
 end
     
   
 #if the game was won
-=begin  
+=begin   if won?(board) == true 
+      puts "Congratulations #{win_combination} you've won the game"
+      else if draw?(board) == true
+        puts "Sorry folks, it's a draw."
 
       
       end
