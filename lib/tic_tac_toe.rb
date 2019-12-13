@@ -119,15 +119,3 @@ while over?(board) != true
 end
     
   
-#if the game was won
-=begin   if won?(board) == true 
-      puts "Congratulations #{win_combination} you've won the game"
-      else if draw?(board) == true
-        puts "Sorry folks, it's a draw."
-
-      
-      end
-    end
-    
-=end
-  
