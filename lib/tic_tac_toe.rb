@@ -114,7 +114,7 @@ while over?(board) != true
     if draw?(board) == true 
       puts "It's a cat's game"
     else
-      puts "Congratulations #{win_combination[1]}"
+      puts "Congratulations #{winner(board)}"
     end
 end
     
